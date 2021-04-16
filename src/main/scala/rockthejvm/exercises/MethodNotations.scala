@@ -29,7 +29,7 @@ object MethodNotations extends App {
   println(!mary)
 
   // postfix notation
-  println(mary isAlive) // only for method without parameters
+  // println(mary isAlive) // only for method without parameters
 
   // apply (equivalent)
   println(mary.apply())
