@@ -1,12 +1,15 @@
-package rockthejvm.exercises
+package rockthejvm.exercises.course1
 
 object AbstractDataTypes extends App {
+
   // abstract
 
   abstract class Animal {
     val creatureType: String
+
     def eat(): Unit
   }
+
   class Dog extends Animal {
     override val creatureType: String = "Canine"
 
@@ -31,9 +34,9 @@ object AbstractDataTypes extends App {
   croc.eat(dog)
 
   // traits vs abstract classes
-    // both can have abstract and non-abstract methods and members
-    // traits do not have contructor parameters
-    // you can extend one class, but mix in multiple traits
-    // traits are behavior, abstract class is a type of thing
+  // both can have abstract and non-abstract methods and members
+  // traits do not have contructor parameters
+  // you can extend one class, but mix in multiple traits
+  // traits are behavior, abstract class is a type of thing
 
 }

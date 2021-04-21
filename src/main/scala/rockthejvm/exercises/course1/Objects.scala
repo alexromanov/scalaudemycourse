@@ -1,4 +1,4 @@
-package rockthejvm.exercises
+package rockthejvm.exercises.course1
 
 object Objects extends App {
 
@@ -8,10 +8,12 @@ object Objects extends App {
   object Person {
     // static / class level functionality
     val N_EYES = 2
+
     def canFly: Boolean = true // methods also can be defined, but only without parameters
 
     // factory method
     def from(mother: Person, father: Person): Person = new Person("Bobbie")
+
     def apply(mother: Person, father: Person): Person = new Person("Bobbie")
   }
 

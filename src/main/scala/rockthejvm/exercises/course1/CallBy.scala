@@ -1,4 +1,4 @@
-package rockthejvm.exercises
+package rockthejvm.exercises.course1
 
 object CallBy extends App {
   def callByValue(x: Long): Unit = {

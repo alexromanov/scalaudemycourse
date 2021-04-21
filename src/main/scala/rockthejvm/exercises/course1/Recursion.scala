@@ -1,4 +1,4 @@
-package rockthejvm.exercises
+package rockthejvm.exercises.course1
 
 import scala.annotation.tailrec
 
@@ -6,7 +6,7 @@ object Recursion extends App {
   // Without tail recursion
   def factorial(n: Int): Int = {
     if (n <= 1) 1
-    else n * factorial(n-1)
+    else n * factorial(n - 1)
   }
 
   println(factorial(5))
@@ -18,6 +18,7 @@ object Recursion extends App {
       if (x <= 1) acc
       else helper(x - 1, x * acc)
     }
+
     helper(n, 1)
   }
 
@@ -36,7 +37,7 @@ object Recursion extends App {
     def isPrimeTailRec(x: Int, isStillPrime: Boolean): Boolean = {
       if (!isStillPrime) false
       if (x <= 1) true
-      else isPrimeTailRec(x - 1, n % x !=0 && isStillPrime)
+      else isPrimeTailRec(x - 1, n % x != 0 && isStillPrime)
     }
 
     isPrimeTailRec(n / 2, isStillPrime = true)
@@ -47,9 +48,10 @@ object Recursion extends App {
       if (i >= n) last
       else fiboTailRec(i + 1, last + nextToLast, last)
     }
+
     if (n <= 2) 1
     else fiboTailRec(2, 1, 1)
   }
 
   println(fibonacci(8))
- }
+}

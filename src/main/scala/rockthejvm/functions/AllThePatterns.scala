@@ -1,6 +1,6 @@
 package rockthejvm.functions
 
-import rockthejvm.exercises.{Empty, MyList, Cons}
+import rockthejvm.exercises.Cons
 
 object AllThePatterns extends App {
 

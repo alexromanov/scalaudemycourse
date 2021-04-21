@@ -1,4 +1,4 @@
-package rockthejvm.exercises
+package rockthejvm.exercises.course1
 
 object InheritAndTraits extends App {
 
@@ -16,6 +16,7 @@ object InheritAndTraits extends App {
 
   // constructors
   class Person(name: String, age: Int)
+
   class Adult(name: String, age: Int, idCard: String) extends Person(name, age)
 
   // overriding
@@ -33,6 +34,6 @@ object InheritAndTraits extends App {
 
   // super - same as in Java
   // preventing overrides
-    // 1 - final on member or class (prevents extending)
-    // 2 - seal the class = extend classes in this file, but not from other files
+  // 1 - final on member or class (prevents extending)
+  // 2 - seal the class = extend classes in this file, but not from other files
 }

@@ -1,4 +1,4 @@
-package rockthejvm.exercises
+package rockthejvm.exercises.course1
 
 object OopExercise {
 
@@ -9,7 +9,9 @@ object OopExercise {
 
   class Novel(name: String, year: Int, author: Writer) {
     def authorAge(): Int = year - author.year
+
     def isWrittenBy(author: Writer): Boolean = author == this.author
+
     def copy(newYearOfRelease: Int): Novel = new Novel(this.name, newYearOfRelease, this.author)
   }
 
@@ -27,4 +29,5 @@ object OopExercise {
       else decrement().decrement(n - 1)
     }
   }
+
 }

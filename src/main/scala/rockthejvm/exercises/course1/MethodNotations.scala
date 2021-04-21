@@ -1,16 +1,26 @@
-package rockthejvm.exercises
+package rockthejvm.exercises.course1
 
 object MethodNotations extends App {
+
   class Person(val name: String, favoriteMovie: String, age: Int = 0) {
     def likes(movie: String): Boolean = movie == favoriteMovie
+
     def hangOutWith(person: Person): String = s"${this.name} hangs out with ${person.name}"
+
     def unary_! : String = s"$name, what the heck!"
+
     def isAlive: Boolean = true
+
     def apply(): String = s"Hi, my name is $name"
-    def +(nickname: String) : Person = new Person(s"$name ($nickname)", favoriteMovie)
+
+    def +(nickname: String): Person = new Person(s"$name ($nickname)", favoriteMovie)
+
     def unary_+ : Person = new Person(name, favoriteMovie, this.age + 1)
+
     def learns(subject: String): String = s"$name learns $subject"
+
     def learnsScala: String = this learns "Scala"
+
     def apply(n: Int): String = s"$name watched $favoriteMovie $n times"
   }
 

@@ -1,6 +1,7 @@
-package rockthejvm.exercises
+package rockthejvm.exercises.course1
 
 object AnonymousClasses extends App {
+
   abstract class Animal {
     def eat: Unit
   }

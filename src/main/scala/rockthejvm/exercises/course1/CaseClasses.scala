@@ -1,6 +1,7 @@
-package rockthejvm.exercises
+package rockthejvm.exercises.course1
 
 object CaseClasses extends App {
+
   case class Person(name: String, age: Int)
 
   // 1. class parameters are fields
@@ -20,7 +21,6 @@ object CaseClasses extends App {
 
   // 7. CCs are serializable
   // 8. CCs have extractor patterns (pattern matching)
-
 
 
 }
