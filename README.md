@@ -1,1 +1,1 @@
-# scalaudemycourse
+# Scala course code from Udemy
